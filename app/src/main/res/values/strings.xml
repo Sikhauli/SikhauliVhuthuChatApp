@@ -1,3 +1,12 @@
 <resources>
   <string name="app_name">My Chat App</string>
+  <string name="send">send</string>
+  <string name="vhuthuhawe">vhuthu</string>
+  <string name="password">password</string>
+  <string name="username">Username</string>
+  <string name="login">Login</string>
+  <string name="save">Save</string>
+  <string name="error_username">Please enter username</string>
+  <string name="send_message">Send Message</string>
+  <string name="set_username">Set Username</string>
 </resources>

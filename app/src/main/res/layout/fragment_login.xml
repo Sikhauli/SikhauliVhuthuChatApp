@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SetUsernameFragment"
+    >
+
+  <EditText
+      android:id="@+id/loginNameView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/username"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/loginPassView"
+      android:autofillHints="true"
+      android:inputType="text"
+      />
+
+  <EditText
+      android:id="@+id/loginPassView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/password"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/loginNameView"
+      android:autofillHints="false"
+      android:inputType="textPassword"
+      />
+
+  <Button
+      android:id="@+id/loginBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/login"
+      android:textAlignment="center"
+      android:textAllCaps="false"
+      android:textSize="20sp"
+      app:layout_constraintTop_toBottomOf="@+id/loginPassView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

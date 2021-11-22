@@ -57,7 +57,7 @@ public class ChatsFragment extends Fragment {
     });
 
     chatsViewModel.fetchChats();
-    chatsViewModel.messageLiveData.observe(getViewLifecycleOwner(), chats -> {
+      chatsViewModel.messageLiveData.observe(getViewLifecycleOwner(), chats -> {
       messageAdapter.addItems(chats);
     });
   }
